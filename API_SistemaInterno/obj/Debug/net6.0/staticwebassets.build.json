@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "azEBB5RVy0r9rGUrDmAxlEWxHQ10o6vb26Mi3WZbYHA=",
+  "Source": "API_SistemaInterno",
+  "BasePath": "_content/API_SistemaInterno",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

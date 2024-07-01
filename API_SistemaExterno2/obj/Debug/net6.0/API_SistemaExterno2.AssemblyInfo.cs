@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("API_SistemaExterno2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a30f9e150f7207bf661aa6ca4bd5017ab45028b7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cc0b83bae26eae5b1495581de8590d14dbf3dbf8")]
 [assembly: System.Reflection.AssemblyProductAttribute("API_SistemaExterno2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("API_SistemaExterno2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
