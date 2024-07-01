@@ -2,15 +2,16 @@
 Cadastro de Pessoas com Integrações Externas
 
 # Tecnologias Utilizadas
- - APIS Rest .Net Core 6
+ - APIs Rest .Net Core 6
  - Entity Framework Core
  - RabbitMQ
- - Container
+ - Container Compose
  - Swagger
  - SQL Server Express
  - Integração com o SendGrid (Envio de Email)
 
 # Aplicações da Solução
+- Frontend ASP.Net (listagem dos dados das 3 aplicações)
 - CRUD da API do Sistema Interno (que integra os dados da pessoa após POST)
 - CRUD da API do Sistema Externo 1
 - CRUD da API do Sistema Externo 2
@@ -21,11 +22,13 @@ Cadastro de Pessoas com Integrações Externas
  - Executar os comandos para criar os 3 banco de dados SQL Server das aplicações
 
    Docker Compose
+   
     -docker-compose up --build
 
   SQL Server (executar os dois comandos nos 3 projetos API .NET Core)
-    Add-Migration Inicial -Context DbContextClass
-    Update-Database -Context DbContextClass
+  
+    - Add-Migration Inicial -Context DbContextClass
+    - Update-Database -Context DbContextClass
 
 
 # Escopo Recebido
