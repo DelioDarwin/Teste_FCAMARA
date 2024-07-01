@@ -23,7 +23,7 @@ Cadastro de Pessoas com Integrações Externas
 
    Docker Compose
    
-    -docker-compose up --build
+    - docker-compose up --build
 
   SQL Server (executar os dois comandos nos 3 projetos API .NET Core)
   
@@ -36,20 +36,28 @@ Cenário 1: Receber Dados Cadastrais e Salvar Internamente
 Dado que um usuário fornece seus dados cadastrais através do endpoint de cadastro,
 Quando o sistema recebe esses dados,
 Então os dados devem ser salvos internamente para referências futuras
+
+
 Cenário 2: Integração com Serviço Externo para Cadastro no Sistema Parceiro
 Dado que os dados cadastrais de um usuário foram salvos internamente,
 Quando o sistema se integra com o serviço externo para o cadastro no sistema parceiro,
 Então os dados salvos internamente devem ser enviados para o sistema parceiro,
 E o sistema deve receber uma confirmação de que o cadastro foi realizado com sucesso.
+
+
 Cenário 3: Integração com Outro Serviço Externo para Cadastro no Sistema Parceiro
 Dado que os dados cadastrais foram salvos internamente após a integração com o primeiro serviço externo, Quando o sistema se integra com outro serviço externo para o mesmo objetivo,
 Então os dados previamente salvos devem ser enviados para o segundo sistema parceiro,
 E o sistema deve receber uma confirmação de que o cadastro foi realizado com sucesso no segundo sistema parceiro.
+
+
 Cenário 4: Tratamento de Falhas na Integração
 Dado que o sistema está integrado com os serviços externos,
 Quando ocorrer uma falha durante a integração com qualquer um dos sistemas parceiros,
 Então o sistema deve registrar a falha para fins de monitoramento e análise,
 E deve notificar os administradores sobre a falha para tomada de ação corretiva.
+
+
 Cenário 5: Verificação de Dados no Sistema Parceiro
 Dado que o cadastro foi realizado com sucesso nos sistemas parceiros,
 Quando necessário
