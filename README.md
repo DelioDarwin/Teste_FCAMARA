@@ -12,10 +12,10 @@ Cadastro de Pessoas com Integrações Externas
 
 # Aplicações da Solução
 - Frontend ASP.Net (listagem dos dados das 3 aplicações)
-- CRUD da API do Sistema Interno (que integra os dados da pessoa após POST)
-- CRUD da API do Sistema Externo 1
-- CRUD da API do Sistema Externo 2
-- Consumidor RabbitMQ das mensagens enviadas pela API do Sistema Interno (após consumir as mensagens - realiza as requisições nas APIS dos sistemas externos para integrar os dados)
+- Back-end CRUD API .Net Core do Sistema Interno (que integra os dados da pessoa após POST)
+- Back-end CRUD API .Net Core do Sistema Externo 1
+- Back-end CRUD API .Net Core do Sistema Externo 2
+- Back-end Consumer RabbitMQ das mensagens enviadas pela API do Sistema Interno (após consumir as mensagens - realiza as requisições nas APIS dos sistemas externos para integrar os dados)
   
  # Instalação
  - Instalar o Container e o RabbitMQ - rodando na porta default
