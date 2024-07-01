@@ -84,6 +84,24 @@
            </div>
          </div>
          <hr class="pb-5">
+
+
+         <div class="row pb-2">
+           <div class="col-12"> 
+             <h3 class="h4 mb-4"><span class="post-title" style="color: darkred">Log de Erros</span></h3>
+           </div>
+           <div class="col-12">
+                <div class="table-responsive">                 
+                <asp:GridView CssClass="table" ID="grvLogErros" runat="server"  AutoGenerateColumns="false" BackColor="#ffeaea">
+                    <Columns>
+                        <asp:BoundField DataField="TipoErro" HeaderText="Tipo do Erro" />
+                        <asp:BoundField DataField="Dados" HeaderText="Dados" />
+                    </Columns>
+                </asp:GridView>
+               </div>
+           </div>
+         </div>
+         <hr class="pb-5">
         
         </div>
       </div>

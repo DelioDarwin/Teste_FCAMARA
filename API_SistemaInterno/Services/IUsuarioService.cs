@@ -9,5 +9,7 @@ namespace API_SistemaInterno.Services
         public Usuario AddUsuario(Usuario usuario);
         public Usuario UpdateUsuario(Usuario usuario);
         public bool DeleteUsuario(int Id);
+        public LogErro AddErro(LogErro logErro);
+        public IEnumerable<LogErro> GetLogErrosList();
     }
 }

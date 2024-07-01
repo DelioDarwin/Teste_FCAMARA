@@ -71,3 +71,8 @@ D:\Teste_FCAMARA\Teste_FCAMARA\RabitMQUsuario.ConsoleApplication\obj\Debug\net6.
 D:\Teste_FCAMARA\Teste_FCAMARA\RabitMQUsuario.ConsoleApplication\obj\Debug\net6.0\RabitMQUsuarioConsoleApplication.pdb
 D:\Teste_FCAMARA\Teste_FCAMARA\RabitMQUsuario.ConsoleApplication\obj\Debug\net6.0\RabitMQUsuarioConsoleApplication.genruntimeconfig.cache
 D:\Teste_FCAMARA\Teste_FCAMARA\RabitMQUsuario.ConsoleApplication\obj\Debug\net6.0\ref\RabitMQUsuarioConsoleApplication.dll
+D:\Teste_FCAMARA\Teste_FCAMARA\RabitMQUsuario.ConsoleApplication\bin\Debug\net6.0\API_SistemaInterno.deps.json
+D:\Teste_FCAMARA\Teste_FCAMARA\RabitMQUsuario.ConsoleApplication\bin\Debug\net6.0\API_SistemaInterno.runtimeconfig.json
+D:\Teste_FCAMARA\Teste_FCAMARA\RabitMQUsuario.ConsoleApplication\bin\Debug\net6.0\API_SistemaInterno.exe
+D:\Teste_FCAMARA\Teste_FCAMARA\RabitMQUsuario.ConsoleApplication\bin\Debug\net6.0\API_SistemaInterno.dll
+D:\Teste_FCAMARA\Teste_FCAMARA\RabitMQUsuario.ConsoleApplication\bin\Debug\net6.0\API_SistemaInterno.pdb

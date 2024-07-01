@@ -15,6 +15,7 @@
   <ItemGroup>
     <ProjectReference Include="..\API_SistemaExterno1\API_SistemaExterno1.csproj" />
     <ProjectReference Include="..\API_SistemaExterno2\API_SistemaExterno2.csproj" />
+    <ProjectReference Include="..\API_SistemaInterno\API_SistemaInterno.csproj" />
   </ItemGroup>
 
 </Project>

@@ -20,6 +20,7 @@ namespace Front
             ListarUsuariosAplicacaoInterna();
             ListarUsuariosAplicacaoExterna1();
             ListarUsuariosAplicacaoExterna2();
+            ListarLogErros();
         }
 
 
@@ -54,56 +55,105 @@ namespace Front
 
         public void ListarUsuariosAplicacaoExterna1()
         {
-            string sEndPoint = "https://localhost:7223/api/usuario/usuariolist";
-            HttpResponseMessage response = client.GetAsync(sEndPoint).Result;
-            List<Usuario> usr = null;
-            if (response.IsSuccessStatusCode)
+            try
+            {           
+                string sEndPoint = "https://localhost:7223/api/usuario/usuariolist";
+                HttpResponseMessage response = client.GetAsync(sEndPoint).Result;
+                List<Usuario> usr = null;
+                if (response.IsSuccessStatusCode)
+                {
+                    string sRetorno = response.Content.ReadAsStringAsync().Result;
+                    usr = JsonConvert.DeserializeObject<List<Usuario>>(sRetorno);
+
+                    //var list = new List<Usuario> { usr };
+
+
+                    if (usr != null)
+                    {
+                        grvAplicacoExterna1.DataSource = usr;
+                        grvAplicacoExterna1.DataBind();
+                    }
+                    else
+                    {
+                        grvAplicacoExterna1.DataSource = null;
+                        grvAplicacoExterna1.DataBind();
+                    }
+                }
+            }
+            catch (Exception)
             {
-                string sRetorno = response.Content.ReadAsStringAsync().Result;
-                usr = JsonConvert.DeserializeObject<List<Usuario>>(sRetorno);
 
-                //var list = new List<Usuario> { usr };
-
-
-                if (usr != null)
-                {
-                    grvAplicacoExterna1.DataSource = usr;
-                    grvAplicacoExterna1.DataBind();
-                }
-                else
-                {
-                    grvAplicacoExterna1.DataSource = null;
-                    grvAplicacoExterna1.DataBind();
-                }
+     
             }
 
         }
 
         public void ListarUsuariosAplicacaoExterna2()
         {
-            string sEndPoint = "https://localhost:7224/api/usuario/usuariolist";
-            HttpResponseMessage response = client.GetAsync(sEndPoint).Result;
-            List<Usuario> usr = null;
-            if (response.IsSuccessStatusCode)
+            try
             {
-                string sRetorno = response.Content.ReadAsStringAsync().Result;
-                usr = JsonConvert.DeserializeObject<List<Usuario>>(sRetorno);
 
-                //var list = new List<Usuario> { usr };
-
-
-                if (usr != null)
+           
+                string sEndPoint = "https://localhost:7224/api/usuario/usuariolist";
+                HttpResponseMessage response = client.GetAsync(sEndPoint).Result;
+                List<Usuario> usr = null;
+                if (response.IsSuccessStatusCode)
                 {
-                    grvAplicacoExterna2.DataSource = usr;
-                    grvAplicacoExterna2.DataBind();
-                }
-                else
-                {
-                    grvAplicacoExterna2.DataSource = null;
-                    grvAplicacoExterna2.DataBind();
+                    string sRetorno = response.Content.ReadAsStringAsync().Result;
+                    usr = JsonConvert.DeserializeObject<List<Usuario>>(sRetorno);
+
+                    //var list = new List<Usuario> { usr };
+
+
+                    if (usr != null)
+                    {
+                        grvAplicacoExterna2.DataSource = usr;
+                        grvAplicacoExterna2.DataBind();
+                    }
+                    else
+                    {
+                        grvAplicacoExterna2.DataSource = null;
+                        grvAplicacoExterna2.DataBind();
+                    }
                 }
             }
+            catch (Exception)
+            {
 
+            }
+        }
+
+        public void ListarLogErros()
+        {
+            try
+            {
+
+                string sEndPoint = "https://localhost:7222/api/usuario/logerroList";
+                HttpResponseMessage response = client.GetAsync(sEndPoint).Result;
+                List<LogErro> usr = null;
+                if (response.IsSuccessStatusCode)
+                {
+                    string sRetorno = response.Content.ReadAsStringAsync().Result;
+                    usr = JsonConvert.DeserializeObject<List<LogErro>>(sRetorno);
+
+                    //var list = new List<Usuario> { usr };
+
+                    if (usr != null)
+                    {
+                        grvLogErros.DataSource = usr;
+                        grvLogErros.DataBind();
+                    }
+                    else
+                    {
+                        grvLogErros.DataSource = null;
+                        grvLogErros.DataBind();
+                    }
+                }
+            }
+            catch (Exception)
+            {
+
+            }
         }
     }
 }

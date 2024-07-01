@@ -41,5 +41,17 @@ namespace API_SistemaInterno.Services
             _dbContext.SaveChanges();
             return result != null ? true : false;
         }
+
+        public LogErro AddErro(LogErro logErro)
+        {
+            var result = _dbContext.LogErros.Add(logErro);
+            _dbContext.SaveChanges();
+            return result.Entity;
+        }
+
+        public IEnumerable<LogErro> GetLogErrosList()
+        {
+            return _dbContext.LogErros.ToList();
+        }
     }
 }

@@ -25,6 +25,7 @@ namespace API_SistemaInterno.Controllers
             return usuarioList;
 
         }
+
         [HttpGet("getusuariobyid")]
         public Usuario GetUsuarioById(int Id)
         {
@@ -54,6 +55,24 @@ namespace API_SistemaInterno.Controllers
         public bool DeleteUsuario(int Id)
         {
             return usuarioService.DeleteUsuario(Id);
+        }
+
+        [HttpPost("adderro")]
+        public LogErro AddErro(LogErro log)
+        {
+            var logerro = usuarioService.AddErro(log);
+
+            return logerro;
+        }
+
+
+
+        [HttpGet("logerroList")]
+        public IEnumerable<LogErro> logErroList()
+        {
+            var logList = usuarioService.GetLogErrosList();
+            return logList;
+
         }
     }
 }

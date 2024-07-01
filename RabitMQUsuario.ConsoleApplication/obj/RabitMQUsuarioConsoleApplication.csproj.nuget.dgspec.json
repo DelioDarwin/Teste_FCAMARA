@@ -202,6 +202,103 @@
         }
       }
     },
+    "D:\\Teste_FCAMARA\\Teste_FCAMARA\\API_SistemaInterno\\API_SistemaInterno.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Teste_FCAMARA\\Teste_FCAMARA\\API_SistemaInterno\\API_SistemaInterno.csproj",
+        "projectName": "API_SistemaInterno",
+        "projectPath": "D:\\Teste_FCAMARA\\Teste_FCAMARA\\API_SistemaInterno\\API_SistemaInterno.csproj",
+        "packagesPath": "C:\\Users\\delio\\.nuget\\packages\\",
+        "outputPath": "D:\\Teste_FCAMARA\\Teste_FCAMARA\\API_SistemaInterno\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\delio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "D:\\Teste_FCAMARA\\Teste_FCAMARA\\RabitMQUsuario.ConsoleApplication\\RabitMQUsuarioConsoleApplication.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -231,6 +328,9 @@
               },
               "D:\\Teste_FCAMARA\\Teste_FCAMARA\\API_SistemaExterno2\\API_SistemaExterno2.csproj": {
                 "projectPath": "D:\\Teste_FCAMARA\\Teste_FCAMARA\\API_SistemaExterno2\\API_SistemaExterno2.csproj"
+              },
+              "D:\\Teste_FCAMARA\\Teste_FCAMARA\\API_SistemaInterno\\API_SistemaInterno.csproj": {
+                "projectPath": "D:\\Teste_FCAMARA\\Teste_FCAMARA\\API_SistemaInterno\\API_SistemaInterno.csproj"
               }
             }
           }

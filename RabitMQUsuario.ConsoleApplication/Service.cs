@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using API_SistemaInterno.Models;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,6 +34,7 @@ namespace RabitMQUsuarioConsoleApplication
                 }
                 else
                 {
+       
                     return false;
                 }
 
@@ -55,6 +57,39 @@ namespace RabitMQUsuarioConsoleApplication
                 string sEndPointAdd = "https://localhost:7224/api/usuario/addusuario";
 
                 HttpResponseMessage result = client.PostAsync(sEndPointAdd, content).Result;
+
+                if (result.IsSuccessStatusCode)
+                {
+                    //string sRetorno = result.Content.ReadAsStringAsync().Result;
+                    //avaliacoRetorno = JsonConvert.DeserializeObject<Avaliacao>(sRetorno);
+
+                    return true;
+
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+
+        }
+
+        public static bool SistemaInterno_AddLogErro(API_SistemaInterno.Models.LogErro log)
+        {
+            try
+            {
+
+
+                var serialized = JsonConvert.SerializeObject(log);
+                var content = new StringContent(serialized, Encoding.UTF8, "application/json");
+
+                string sEndPointAdd = "https://localhost:7222/api/usuario/adderro";
+                HttpResponseMessage result = client.PostAsync(sEndPointAdd, content).Result;
+
 
                 if (result.IsSuccessStatusCode)
                 {

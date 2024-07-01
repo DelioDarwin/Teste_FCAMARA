@@ -960,6 +960,26 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "API_SistemaInterno/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.7",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.7",
+          "Newtonsoft.Json": "13.0.1",
+          "RabbitMQ.Client": "6.4.0",
+          "Swashbuckle.AspNetCore": "6.2.3"
+        },
+        "compile": {
+          "bin/placeholder/API_SistemaInterno.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/API_SistemaInterno.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -2420,12 +2440,18 @@
       "type": "project",
       "path": "../API_SistemaExterno2/API_SistemaExterno2.csproj",
       "msbuildProject": "../API_SistemaExterno2/API_SistemaExterno2.csproj"
+    },
+    "API_SistemaInterno/1.0.0": {
+      "type": "project",
+      "path": "../API_SistemaInterno/API_SistemaInterno.csproj",
+      "msbuildProject": "../API_SistemaInterno/API_SistemaInterno.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "API_SistemaExterno1 >= 1.0.0",
       "API_SistemaExterno2 >= 1.0.0",
+      "API_SistemaInterno >= 1.0.0",
       "RabbitMQ.Client >= 6.8.1",
       "SendGrid >= 9.29.3"
     ]
@@ -2462,6 +2488,9 @@
             },
             "D:\\Teste_FCAMARA\\Teste_FCAMARA\\API_SistemaExterno2\\API_SistemaExterno2.csproj": {
               "projectPath": "D:\\Teste_FCAMARA\\Teste_FCAMARA\\API_SistemaExterno2\\API_SistemaExterno2.csproj"
+            },
+            "D:\\Teste_FCAMARA\\Teste_FCAMARA\\API_SistemaInterno\\API_SistemaInterno.csproj": {
+              "projectPath": "D:\\Teste_FCAMARA\\Teste_FCAMARA\\API_SistemaInterno\\API_SistemaInterno.csproj"
             }
           }
         }

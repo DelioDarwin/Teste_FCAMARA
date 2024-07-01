@@ -17,5 +17,6 @@ namespace API_SistemaInterno.Data
         }
 
         public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<LogErro> LogErros { get; set; }
     }
 }

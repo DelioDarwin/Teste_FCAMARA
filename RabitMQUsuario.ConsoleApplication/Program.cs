@@ -1,5 +1,6 @@
 ﻿using API_SistemaExterno1.Models;
 using API_SistemaExterno2.Models;
+using API_SistemaInterno.Models;
 using Newtonsoft.Json;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
@@ -51,6 +52,12 @@ consumer_SistemaExterno1.Received += (model, eventArgs) =>
             {
                 string sMsgErro = $"ERRO DE INTEGRAÇAO no Sistema Externo 1: {message}";
                 Console.WriteLine(sMsgErro);
+
+                LogErro log = new LogErro();
+                log.TipoErro = "API Indisponível - Sistema Externo 1";
+                log.Dados = message;
+                Service.SistemaInterno_AddLogErro(log);
+
                 Email.EnviarEmail_Ativacao("deliodarwin@gmail.com", sMsgErro);
             }
         }
@@ -88,6 +95,12 @@ consumer_SistemaExterno2.Received += (model, eventArgs) =>
             {
                 string sMsgErro = $"ERRO DE INTEGRAÇAO no Sistema Externo 2: {message}";
                 Console.WriteLine(sMsgErro);
+
+                LogErro log = new LogErro();
+                log.TipoErro = "API Indisponível - Sistema Externo 2";
+                log.Dados = message;
+                Service.SistemaInterno_AddLogErro(log);
+
                 Email.EnviarEmail_Ativacao("deliodarwin@gmail.com", sMsgErro);
             }
         }
