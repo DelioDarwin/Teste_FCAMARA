@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RabitMQUsuarioConsoleApplication")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+78fa95b34dae77092ca4583e09fd9664d5a72226")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2b074c8a1d61bf60cdcc3a80e2f6ecf3f4b65e72")]
 [assembly: System.Reflection.AssemblyProductAttribute("RabitMQUsuarioConsoleApplication")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RabitMQUsuarioConsoleApplication")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
